@@ -1,0 +1,62 @@
+version: '3'
+
+services:
+
+  traefik:
+    image: traefik:1.7
+    command: --docker --docker.exposedbydefault=false
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  backend:
+    image: doctrine/php:7.2-v2-apache-node10
+    labels:
+      - traefik.enable=true
+      - traefik.backend=backend
+      - traefik.frontend.rule=Host:backend.ambassador.localhost,$HOST_IP
+    environment:
+      MAX_EXECUTION_TIME: 360 #Maximum execution time of each script, in seconds
+      MAX_INPUT_TIME: 120 #Maximum amount of time each script may spend parsing request data
+      PHP_INI_MEMORY_LIMIT: 1G #Maximum amount of memory a script may consume
+      PHP_EXTENSION_XDEBUG: 1
+      STARTUP_COMMAND_1: composer install
+      STARTUP_COMMAND_2: npm install
+      STARTUP_COMMAND_3: npm run dev
+      # doctrine
+      DEBUG: "true"
+      SECRET: 
+      ENABLE_CSRF_PROTECTION: "false"
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USERNAME: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ./sources/backend:/var/www/html:rw
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./deployments/docker-compose/mysql/utf8mb4.cnf:/etc/mysql/conf.d/utf8mb4.cnf:ro
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.8
+    labels:
+      - traefik.enable=true
+      - traefik.backend=phpmyadmin
+      - traefik.frontend.rule=Host:phpmyadmin.ambassador.localhost
+    environment:
+      PMA_HOST: mysql
+
+volumes:
+
+  mysql_data:
+    driver: local

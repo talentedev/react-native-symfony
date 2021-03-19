@@ -1,0 +1,28 @@
+query allBusiness($limit: Int, $offset: Int) {
+    allBusiness {
+        items(limit: $limit, offset: $offset) {
+          # Results to return
+            id
+            email
+            userName
+            businessName
+            phoneNumber
+            status
+            category {
+            id
+            label
+            }
+            subCategory {
+            id
+            label
+            }
+            profileImageUrl
+            instagramId
+            facebookUrl
+            websiteUrl
+            rejectedReason
+        }
+    count
+  }
+}
+

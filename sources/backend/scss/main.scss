@@ -1,0 +1,33 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+//fonts
+@import "../node_modules/vue-multiselect/dist/vue-multiselect.min.css";
+// ambassador theme.
+@import 'ambassador/scss/global';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("ambassador/Fonts/Poppins-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins Light";
+  src: url("ambassador/Fonts/Poppins-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("ambassador/Fonts/Poppins-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("ambassador/Fonts/Poppins-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("ambassador/Fonts/Poppins-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("ambassador/Fonts/Poppins-SemiBold.ttf") format("ttf");
+}

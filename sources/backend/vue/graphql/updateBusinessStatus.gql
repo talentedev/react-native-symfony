@@ -1,0 +1,3 @@
+mutation updateBusinessStatus($id: String!, $status: String!, $rejectReason: String) {
+    updateBusinessStatus(id: $id, status: $status, rejectReason: $rejectReason)
+}

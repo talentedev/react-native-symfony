@@ -1,0 +1,5 @@
+vendor
+node_modules
+doctrine/no_commit
+public
+upload_files

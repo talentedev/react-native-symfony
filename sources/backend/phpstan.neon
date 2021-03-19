@@ -1,0 +1,10 @@
+includes:
+    - vendor/doctrine/phpstan-strict-rules/phpstan-strict-rules.neon
+    - vendor/doctrine/phpstan-safe-rule/phpstan-safe-rule.neon
+parameters:
+    autoload_files:
+        - %currentWorkingDirectory%/doctrine/doctrine.php
+    excludes_analyse:
+        - %currentWorkingDirectory%/src/Model/Generated/*.php
+        - %currentWorkingDirectory%/src/Dao/Generated/*.php
+        - %currentWorkingDirectory%/src/Migrations/*.php

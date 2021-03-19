@@ -1,0 +1,357 @@
+$ambassador-blue : #00ccdc;
+$ambassador-white : #fff;
+$ambassador-blue-accent : #47748b;
+$ambassador-blue-transparent : #0000003b;
+$ambassador-soft-blue : #57a3e8 ;
+$ambassador-blue-transparent-menu : #4da4bb;
+$ambassador-gray-title :  #505050;
+$ambassador-gray-subtitle :  #232222;
+$ambassador-success :  #27c12f;
+$ambassador-error :  #c12733;
+$ambassador-reject-btn-color :  #ea505f;
+$sidebar-blue : #02ccdc ;
+$ambassador-gray-background : #eff4fa;
+
+.image-container{
+  line-height: 40vh;
+  text-align: center;
+  .sidebar-image{
+    max-width: 210px;
+  }
+}
+
+.image-container{
+  margin-top: 50px;
+  text-align: center;
+  .sidebar-image{
+    max-width: 210px;
+  }
+}
+.ambassador-error-text{
+  color: $ambassador-error;
+}
+.promotion-link{
+  color: $ambassador-blue;
+  font-size: 0.9em;
+}
+.ambassador-promotion-image{
+  width: 140px;
+  height: 100px;
+  border-radius: 10px 10px 10px 10px;
+}
+.ambassador-table{
+  color: $ambassador-gray-subtitle;
+  .subrow{
+    border-top: 2px solid $ambassador-gray-background;
+    &.head{
+
+    }
+    &.body{
+
+    }
+  }
+}
+body{
+  font-family: 'Poppins';
+  background: $ambassador-gray-background;
+}
+.top-header{
+  z-index: 1;
+  color: $ambassador-white;
+  background: $sidebar-blue;
+  margin-left: -15px;
+  padding-left: 15px ;
+  padding-top: 10px;
+  padding-bottom: 10px;;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: none;
+  .mobile-menu-logo{
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  .mobile-menu{
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+  .mobile-menu-item{
+      font-size : 1.2em;
+      width: 98%;
+      a{
+        border-radius: 10px 10px 10px 10px;
+        &.active{
+          background: $ambassador-blue-transparent-menu;
+        }
+      }
+  }
+  .menu-icon{
+    position: absolute;
+    color: $ambassador-white;
+    font-size: 1.5em;
+  }
+}
+.business-icon-link{
+  font-size: 2em;
+}
+.business-logo{
+  width: 75px;
+  height: 75px;
+}
+.ambassador-modal{
+    &.title{
+      color:$ambassador-gray-title;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    &.subtitle{
+      color: $ambassador-gray-subtitle;
+      font-size: 0.8em;
+      font-weight: 500;
+    }
+    &.label-subtitle{
+      color: $ambassador-gray-subtitle ;
+    }
+}
+.ambassador-modal-btn{
+  float: right;
+  &.reject{
+    background: $ambassador-reject-btn-color;
+    border-radius: 20px 20px 20px 20px ;
+  }
+  &.cancel{
+    background: none;
+    color: $ambassador-gray-subtitle;
+    border : none;
+  }
+}
+.ambassador-state-btn{
+  border-radius: 20px 20px 20px 20px;
+  font-size: 1em;
+  background: #f3eeee;
+}
+.ambassador-status{
+  font-size: 0.9em;
+  font-weight: bold;
+  &.approved{
+    color : $ambassador-success ;
+  }
+  &.rejected{
+    color : $ambassador-error ;
+  }
+}
+.ambassador-logo{
+  width: 36px;
+  height: 36px;
+}
+.ambassador-paginator{
+  position: fixed;
+  bottom: 6px;
+  width: calc(100vw - 270px);
+  left: 270px;
+  .page-link{
+    color: $ambassador-blue;
+  }
+  .page-item.active .page-link {
+    background-color: $ambassador-blue;
+    border-color: $ambassador-blue;
+  }
+}
+
+.ambassador-content-header{
+  .badge{
+    font-size: 0.8em;
+    border-bottom-right-radius: 2px;
+    padding: .5em .6em .5em .6em;
+  }
+  .header-title{
+    font-size: 2em;
+    font-weight: 900;
+    color: $ambassador-gray-title ;
+  }
+  .header-description{
+    color: $ambassador-gray-subtitle;
+  }
+}
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+.container{
+  max-width : 100% !important;
+}
+.ambassador-content {
+  width: calc(100vw - 270px);
+  border-radius: 20px 0px 0px 0px;
+  background: $ambassador-gray-background;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-right: 5px;
+  overflow: auto;
+  margin-left: 270px;
+}
+
+#content {
+  width: 100vW;
+  //height: 100vH;
+  //position: fixed;
+  left: 0;
+  top: 0;
+  padding-left: 0;
+  padding-right: 0 ;
+  //background: $sidebar-blue;
+  //background-image: linear-gradient(to bottom, $sidebar-blue, #00c3e4, #00b9ea, #36afeb, $ambassador-soft-blue);
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: $ambassador-white;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#sidebar {
+  .ambassador-header-logo{
+    max-width: 40px;
+    border-radius: 50% 50% 10% 50%;
+  }
+  position: fixed;
+  min-width: 270px;
+  max-width: 270px;
+  background: $ambassador-blue;
+  background-image: linear-gradient(to bottom, $sidebar-blue, #00c3e4, #00b9ea, #36afeb, $ambassador-soft-blue);
+  color: $ambassador-white;
+  height: 100vh;
+}
+
+#sidebar.active {
+  margin-left: -270px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1em;
+  display: block;
+  position: relative;
+  &.nav-link{
+    &.active,&:hover,&:focus
+    {
+      font-weight: bold;
+      font-size: larger;
+    }
+  }
+}
+
+#sidebar ul li a.active::after{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 10px 7.5px 0;
+  border-color: transparent $ambassador-white transparent transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: $ambassador-blue;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.8em !important;
+  display: block;
+  border-radius: 35px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+a.bottom-menu  {
+  background: $ambassador-blue-transparent;
+  color: $ambassador-white;
+  position: fixed !important;
+  bottom: 20px;
+  padding: 3px 10px 4px 10px !important;
+
+  &.right{
+    left: 160px;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+  .top-header{
+    display: unset;
+
+  }
+  .ambassador-content{
+    margin-left: 0 ;
+    width: 100%;
+
+  }
+  #sidebar {
+    display: none;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}

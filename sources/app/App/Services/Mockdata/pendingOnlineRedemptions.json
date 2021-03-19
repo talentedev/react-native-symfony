@@ -1,0 +1,77 @@
+{
+  "data": {
+    "pendingOnlineRedemption": {
+      "count": 4,
+      "items": [
+        {
+          "uuid": "3dcce377-9fcf-45cd-a790-75e0589ba57d",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "promotion": {
+            "uuid": "fzjeifjzeipfjziefjze",
+            "caption": "30% off on satin floral cloth"
+          },
+          "onlineRedemptionInvoiceNumber": "234GD63DA22",
+          "onlinePromoPricing": {
+            "charge": "50.00"
+          },
+          "createdDate": "2019-01-25T14:38:39+00:00",
+          "is_approved": null
+        },
+        {
+          "uuid": "63c2dd3f-8ece-4700-884a-b657676d7589",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "promotion": {
+            "uuid": "fzjeifjzeipfjziefjze",
+            "caption": "30% off on satin floral cloth"
+          },
+          "onlineRedemptionInvoiceNumber": "DD6EHD7303",
+          "onlinePromoPricing": {
+            "charge": "20.00"
+          },
+          "createdDate": "2019-02-25T14:38:39+00:00",
+          "is_approved": null
+        },
+        {
+          "uuid": "699ba380-78b9-442f-bb20-68f8d65d60f4",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "promotion": {
+            "uuid": "zzzzzzzzzzzzzzzzz",
+            "caption": "20% off on lace cloth"
+          },
+          "onlineRedemptionInvoiceNumber": "234GD63DA22",
+          "onlinePromoPricing": {
+            "charge": "20.00"
+          },
+          "createdDate": "2019-03-25T14:38:39+00:00",
+          "is_approved": null
+        },
+        {
+          "uuid": "8d27cc53-100f-4db6-9705-afb52521c86c",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "promotion": {
+            "uuid": "zzzzzzzzzzzzzzzzz",
+            "caption": "20% off on lace cloth"
+          },
+          "onlineRedemptionInvoiceNumber": "234GD63DA22",
+          "onlinePromoPricing": {
+            "charge": "50.00"
+          },
+          "createdDate": "2019-03-25T14:38:39+00:00",
+          "is_approved": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+mutation updatePromotionStatus($uuid: String!, $status: String!, $rejectReason: String) {
+    updatePromotionStatus(uuid: $uuid, status: $status, rejectReason: $rejectReason)
+}

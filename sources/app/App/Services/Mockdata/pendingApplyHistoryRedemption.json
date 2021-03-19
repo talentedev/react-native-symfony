@@ -1,0 +1,75 @@
+{
+  "data": {
+    "pendingApplyHistoryRedemption": {
+      "count": 6,
+      "items": [
+        {
+          "uuid": "3dcce377-9fcf-45cd-a790-75e0589ba57d",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "createdDate": "2019-01-25T14:38:39+00:00",
+          "description": "Sending proof of purchase for reference. Purchased a silk fabric a week before, you can check the date in the provided picture. Thanks.",
+          "is_approved": null,
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/800px-ReceiptSwiss.jpg"
+        },
+        {
+          "uuid": "63c2dd3f-8ece-4700-884a-b657676d7589",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "createdDate": "2019-02-03T02:41:46+00:00",
+          "description": "Proof attached of a fabric purchase",
+          "is_approved": null,
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/800px-ReceiptSwiss.jpg"
+        },
+        {
+          "uuid": "699ba380-78b9-442f-bb20-68f8d65d60f4",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "createdDate": "2019-03-03T03:04:53+00:00",
+          "description": "See image for bill on Wunda fabric",
+          "is_approved": null,
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/800px-ReceiptSwiss.jpg"
+        },
+        {
+          "uuid": "8d27cc53-100f-4db6-9705-afb52521c86c",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "createdDate": "2019-10-03T07:06:05+00:00",
+          "description": "Bill as requested",
+          "is_approved": false,
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/800px-ReceiptSwiss.jpg"
+        },
+        {
+          "uuid": "pro_boo_sot_kof",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "createdDate": "2019-08-07T03:51:20+00:00",
+          "description": "Foo bar",
+          "is_approved": true,
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/800px-ReceiptSwiss.jpg"
+        },
+        {
+          "uuid": "pro_boo_sot_wun",
+          "redeemed": {
+            "id": "test_customer_4",
+            "userName": "wesleybonne"
+          },
+          "createdDate": "2019-08-07T03:53:33+00:00",
+          "description": "Foo bar",
+          "is_approved": true,
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/ReceiptSwiss.jpg/800px-ReceiptSwiss.jpg"
+        }
+      ]
+    }
+  }
+}

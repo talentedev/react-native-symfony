@@ -1,0 +1,36 @@
+query allPromotions($limit: Int, $offset: Int) {
+    allPromotions {
+        items(limit: $limit, offset: $offset) {
+          # Results to return
+                businessLocations{
+                     uuid
+                     caption
+                }
+            business{
+                id
+                businessName
+                category {
+                            id
+                            label
+                            }
+                            subCategory {
+                            id
+                            label
+                            }
+            }
+            uuid
+            targetNumber
+            budget
+            caption
+            description
+            promoImageUrl
+            period
+            startDate
+            endDate
+            status
+            rejectedReason
+        }
+    count
+  }
+}
+

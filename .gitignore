@@ -1,0 +1,8 @@
+.env
+.osx_setup_done
+docker-compose.override.yml
+!deployments/docker-compose/docker-compose.override.yml
+*.DS_Store
+*.idea
+yarn.lock
+node_modules/
